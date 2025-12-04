@@ -12,9 +12,9 @@ int main(){
     cout<<"there are "<<partition<<" partition can form by allocated memory"<<endl;
     int memo_proc[n];
     // int 
-    for(int i = 0 ; i <partition ; i++){
+    for(int i = 0 ; i < partition ; i++){
         cout<<"enter memory required for "<<i+1<<"th process"<<endl;
-        cin>>memo_proc[i];
+        cin>>memo_proc[i]; //each process memo
     }
 
     int internal_frag_each[n]; //stores each block internal fragmentation

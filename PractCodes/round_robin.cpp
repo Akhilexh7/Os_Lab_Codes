@@ -30,7 +30,7 @@ int main(){
 
             if(temp_bt[i] > 0){
 
-                if(temp_bt[i] > t){
+                if(temp_bt[i] > t){ // not yet finished
                     tot_time += t;
                     temp_bt[i] -= t;
                 }
@@ -38,12 +38,14 @@ int main(){
                     tot_time += temp_bt[i];
                     temp_bt[i] = 0;
 
-                    ct[i] = tot_time;
+                    ct[i] = tot_time; // to update only we carryying tot time
                     tat[i] = ct[i];                 // FIXED
-                    wt[i] = tat[i] - burst[i];
+                    wt[i] = tat[i] - burst[i]; // no bt was harmed
 
-                    donecnt++;
+                    donecnt++; // no of process done
                 }
+
+
             }
         }
     }
